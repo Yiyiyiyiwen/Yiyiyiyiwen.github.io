@@ -346,6 +346,33 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2019/03/14/hello-world/">
+            
+                <span>Hello World</span>
+        </a>
+        <div class="abstract-content">
+            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new "My New Post"
+More info: Writing
+Run server1$ hexo server
+More...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/14</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2019/03/14/React-Native/">
             
                 <span>初次接触React Native，搭建环境及调试报错解决</span>
@@ -374,16 +401,17 @@ react-native run-android
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/03/14/hello-world/">
+        <a class="abstract-title" href="/2019/03/14/showitem/">
             
-                <span>Hello World</span>
+                <span>关于微信小程序多层嵌套渲染列表以及嵌套列表中数据的获取</span>
         </a>
         <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
+            起因：意图是想实现类似于安卓viewpager那样的效果，想到了用微信小程序的swiper组件，但如果每个swiper-item里都只用一个wx:for来渲染数据的话实在是太慢了，就想到多层嵌套数据渲染来提高效率。
+直接上代码
+wxml：
+&lt;view wx:for=&quot;{{one}}&quot; wx:key=&quot;id&quot;&gt;
+    &lt;view&gt;----{{item.name}}----&lt;/view&gt;
+    &lt;view wx:for=&quot;{{item.two}}&quot; wx:for-item=&quot;t...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -510,9 +538,18 @@ More...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 2
+        Total : 3
         </div>
         <!-- search  -->
         
@@ -523,22 +560,18 @@ More...
     
     
     
-    <div class="archive-year"> Invalid date </div>
+    <div class="archive-year"> 2019 </div>
     <ul class="year-list">
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href="/2019/03/14/hello-world/">Hello World</a>
+            <span class="archive-post-date">03/14</span><a class="archive-post-title" href="/2019/03/14/hello-world/">Hello World</a>
         </li>
     
     
-    
-    
-    
-        </ul>
-    
-    <div class="archive-year"> 2019 </div>
-    <ul class="year-list">
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/14</span><a class="archive-post-title" href="/2019/03/14/showitem/">关于微信小程序多层嵌套渲染列表以及嵌套列表中数据的获取</a>
+        </li>
     
     
         <li class="archive-post-item">
