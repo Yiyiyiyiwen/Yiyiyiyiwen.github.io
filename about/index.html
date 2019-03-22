@@ -13,16 +13,16 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="朱熠雯">
     <meta name="renderer" content="webkit">
-    <meta name="copyright" content="John Doe">
+    <meta name="copyright" content="朱熠雯">
     
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>about · fi3ework&#39;s Studio</title>
+    <title>个人简介 · fi3ework&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -237,7 +237,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            about
+            个人简介
             
         </h1>
         <!-- 副标题 -->
@@ -349,7 +349,150 @@ height:50vh;
             <!-- 不可以删除，否则会调用post的layout  -->
 <main class="main about-page">
     <article class="article-entry">
-        
+        <!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/about.css">
+
+</head>
+
+<body>
+    <div class="blogs-title">
+        <div class="title-left"></div>
+        <div class="title-content">
+            项目经验
+        </div>
+    </div>
+    <div id="blog-container">
+
+    </div>
+
+
+    <script src="/scripts/jquery-3.3.1.min.js"> </script>
+    <script>
+        window.onload = function () {
+            var container = document.getElementById("blog-container");
+
+            var list = [{
+                title: "答题吧",
+                direction: "微信小程序",
+                time: "2018.5 - 2018.7",
+                tech: "微信小程序",
+                img: "/intro/答题.png",
+                intro: "答题吧是一款基于微信小程序开发的office二级答题类型的应用，通过关卡制的模式为用户提供分组练习、错题集、模拟考试等服务。",
+                position: "微信小程序开发",
+                tip: "微信小程序",
+                icon: "/intro/果汁.png"
+            },
+            {
+                title: "AI医疗",
+                direction: "前端/微信小程序",
+                time: "2018.4 - 2018.5",
+                tech: "h5+css3+js+Bootstrap",
+                img: "/intro/AI.png",
+                intro: "AI医疗将图像识别、深度学习等领先的技术与医学跨界融合，辅助 医生对皮肤病进 行相关的诊断，可提升皮肤病诊断和治疗的准确率。",
+                position: "前端web开发/微信小程序端开发",
+                //tip: ["前端", "微信小程序"],
+                tip: "前端",
+                icon: "/intro/杯子蛋糕.png"
+            },
+
+            {
+                title: "紫金总务",
+                direction: "微信小程序",
+                time: "2018.1-2018.2",
+                tech: "wxml+wxss+js",
+                img: "/intro/总务.png",
+                intro: "紫金总务与学校对接，主要负责开发学校报修、食堂订餐等功能",
+                position: "微信小程序开发",
+                tip: "微信小程序",
+                icon: "/intro/热狗.png"
+            },
+            {
+                title: "江苏软件园资产管理系统",
+                direction: "jsp web",
+                time: "2017.4-2017.6",
+                tech: "html+js+Bootstrap+java",
+                img: "/intro/资产.png",
+                intro: "江苏软件园资产管理系统是一款为公司会议室、部门人员、固定资产打造的企业全生命周期资产管理解决方案",
+                position: "前端开发",
+                tip: "前端",
+                icon: "/intro/章鱼小丸子.png"
+            }]
+            for (var i = 0; i < list.length; i++) {
+                var item = "<div class='blog-item col-md-8 col-sm-12'>" +
+                    "<div class='intro-img'>" +
+                    "<img class='icon'></div>" +
+                    "<div class='item-title'>" +
+                    list[i].title +
+                    "</div>" +
+                    "<div class='item-des'>" +
+                    "<div class='des-direction'>" +
+                    list[i].direction +
+                    " </div><div class='des-dot'></div><div class='des-time'>" +
+                    list[i].time +
+                    "</div><div class='des-dot'></div><div class='des-tech'>" +
+                    list[i].tech +
+                    "</div></div><div class='line'></div>" +
+                    "<div class='project-img'> <img class='introimg'></div>" +
+                    "<div class='item-intro'>" +
+                    "<div class='intro-item'>" +
+                    "<div class='intro-titles'>" +
+                    "项目介绍：" +
+                    "</div>" +
+                    "<div class='intro-des'>" +
+                    list[i].intro +
+                    "</div>" +
+                    "</div>" +
+                    "<div class='intro-item'>" +
+                    "<div class='intro-titles'>" +
+                    "项目职位：" +
+                    "</div>" +
+                    "<div class='intro-des'>" +
+                    list[i].position +
+                    "</div>" +
+                    "</div>" +
+                    "<div class='intro-item'>" +
+                    "<div class='intro-titles'>" +
+                    " 项目技术：" +
+                    "</div>" +
+                    "<div class='intro-des'>" +
+                    list[i].tech +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+
+                    "<div class='line'></div>" +
+
+                    "<div class='intro-tip'>" +
+                    "<div class='tip-title'>" +
+                    list[i].tip
+                "</div>" +
+                    "</div>" +
+                    "</div>"
+                container.innerHTML += item
+                $(".introimg")[i].src = list[i].img
+                $(".icon")[i].src = list[i].icon
+                // for(var j=0;j<list.tip.length;j++){
+                //     $("#tip-title").innerHtml(item)
+                // }
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
     </article>
 </main>
             <!-- profile -->
@@ -560,7 +703,7 @@ jsonContent:
     <script>
     var siteMeta = {
         root: "/",
-        author: "John Doe"
+        author: "朱熠雯"
     }
 </script>
     <!-- CDN failover -->
