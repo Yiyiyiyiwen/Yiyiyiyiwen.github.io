@@ -346,26 +346,20 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2017/10/31/hello-world/">
+        <a class="abstract-title" href="/2019/02/28/nginx/">
             
-                <span>从零搭建HEXO博客</span>
+                <span>关于用nginx反向代理解决浏览器跨域问题</span>
         </a>
         <div class="abstract-content">
-            准备：搭建环境大致分为以下两步：
-1.安装Node.js2.安装git
-配置Node.js环境下载Node.js安装 
-
-Windows Installer 32-bithttps://nodejs.org/dist/v4.2.3/node-v4.2.3-x86.msi2.Windows Installer 64-bithttps://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi
-
-保持默认设置，安装结束后，按win+R，在运行窗口中输入cmd，回车，打开命令行界面。输入：
-node -v 
-npm -v
-如果结果如下图所示，那么说明你已经安装成功...
+            什么是跨域？浏览器从一个域名的网页去请求另一个域名的资源也就是A页面想要访问B页面的资源时如果域名、端口、协议任一不同都是跨域 
+跨域的具体报错现在我有两个网站一个页面部署在localhost：8080，也就是我本地的8080端口上另一个页面部署在服务器上那么我如果这么写访问请求就会出现如下跨域报错翻译过来可以理解为：请求的资源上不存在“访问控制允许来源”头。因此，不允许访问源XXX也就是我们所说的跨域问题
+准备：Nginx搭建下载Nginx下载地址：http://nginx.org/en/download.html
+修改config配置文件打开在conf文件夹下的”nginx.conf...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/10/31</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/28</span>
             </div>
             <!-- tags  -->
             
