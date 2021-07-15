@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>face测试</title>
+  <link rel="stylesheet" href="/css/style.css" />
+
+</head>
+
+<body>
+  <div class="body_container">
+    <img src="/images/headbg.jpeg" class="headerbg">
+
+    <div class="face_container">
+      <div id="layout" class="layout"><img src="/images/loading.gif" /></div>
+
+
+      <div class="outer">
+        <img src="/images/huge.png" id="example" />
+        <img id="target" src="" style="display: none;" />
+        <canvas id="canvas" width="713" height="578" style="display: none;"></canvas>
+      </div>
+      <form id="uface">
+        <a href="javascript:;" class="a-upload">
+          <input type="file" name="files" id="upload" />上传照片
+        </a>
+        <div class="showFileName" style="display: none;"></div>
+        <div>
+          <button type="button" onClick="mergeImg()" class="button_style">生成照片</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/index.js"></script>
+  <!-- 引入组件库 -->
+</body>
+
+</html>
